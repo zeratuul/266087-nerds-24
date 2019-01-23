@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Имануил Лукашевич](https://up.htmlacademy.ru/htmlcss/24/user/266087).
-* Наставник: [Алим Нагоев] (https://htmlacademy.ru/profile/id911531)
+* Наставник: [Алим Нагоев](https://htmlacademy.ru/profile/id911531)
 
 ---
 
