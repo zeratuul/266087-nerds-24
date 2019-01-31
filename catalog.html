@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo" href="index.html">
+				<img src="#" href="index.html" width="160" height="65" alt="Логотип дизайн студии «Нёрдс»">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
+				<li class="site-navigation-current"><a href="#">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a class="login-link">Корзина</a></li>
+			</ul>
+		</nav>
+
+		<div class="catalog-head">
+			<h1 class="catalog-lead">Магазин готовых шаблонов</h1>
+		</div>
+	</header>
+	<main class="container">
+		<section class="container-catalog">
+			<div class="catalog-filters">
+				<h2 class="visuality-hidden">Фильтр товаров</h2>
+
+				<div class="filters-advantages">
+					<form class="filter-form" action="#" method="get">
+						<fieldset class="cost-range">
+							<legend class="range-legend">СТОИМОСТЬ:</legend>
+							<div class="filter-cost-range">
+								<div class="cost-range-wrapper">
+									<div class="range-content">
+										<span class="range-content-"></span>line
+										<button class="range-content-control"></button>
+										<button class="range-content-control"></button>
+									</div>
+								</div>
+								<div class="range-fields">
+									
+									<label for="from" class="range-fields-label">От</label>
+									<input id="from" type="number" class="range-fields-item" min="0" placeholder="0">
+																		
+									<label for="before" class="range-fields-label">До</label>
+									<input id="before" type="number" class="range-fields-item" max="15000" placeholder="15000">
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset class="filer-grid">
+							<legend class="filter-grid-legend">Сетка:</legend>
+							<p class="filter-group-radio">
+								<input id="adaptive" class="filter-grid-radio" type="radio" name="question-one" value="ad" checked>
+								<label for="adaptive" class="filter-grid-label">Адаптивная</label>
+							</p>
+							<p class="filter-group-radio">
+								<input id="fixed" class="filter-grid-radio" type="radio" name="question-one" value="fx">
+								<label for="fixed" class="filter-grid-label">Фиксированная </label>
+							</p>
+							<p class="filter-group-radio">
+								<input id="rubber" class="filter-grid-radio" type="radio" name="question-one" value="rb">
+								<label for="rubber" class="filter-grid-label">Резиновая </label>
+							</p>
+						</fieldset>
+						<fieldset class="filter-features">
+							<legend class="filter-features-legend">ОСОБЕННОСТИ:</legend>
+							<p class="filter-group-checkbox">
+								<input id="slider" type="checkbox" name="slider" checked>
+								<label for="slider" class="filter-features-checkbox">Слайдер </label>
+							</p>
+							<p class="filter-group-checkbox">
+								<input id="advantages" type="checkbox" name="advantages">
+								<label for="advantages" class="filter-features-checkbox">Блок преимуществ </label>
+							</p>
+							<p class="filter-group-checkbox">
+								<input id="news" type="checkbox" name="news" checked>
+								<label for="news" class="filter-features-checkbox">Новости </label>
+							</p>
+							<p class="filter-group-checkbox">
+								<input id="galery" type="checkbox" name="galery">
+								<label for="galery" class="filter-features-checkbox">Галерея </label>
+							</p>
+							<p class="filter-group-checkbox">
+								<input id="basket" type="checkbox" name="basket">
+								<label for="basket" class="filter-features-checkbox">Корзина </label>
+							</p>
+						</fieldset>
+						<input class="form-button" type="submit" value="Показать">
+					</form>
+				</div>
+
+			</div>
+			<div class="catalog-content">
+				<h2 class="visuality-hidden">Список товаров</h2>
+				<div class="catalog-sort">
+					<h3 class="catalog-header">СОРТИРОВАТЬ:</h3>
+					<ul class="catalog-list">
+						<li><a href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По названию</a></li>
+					</ul>
+				</div>
+				<ul class="catalog-list">
+					<li class="catalog-item"><a href="#">Sedona</a></li>
+					<li class="catalog-item"><a href="#">Pink</a></li>
+					<li class="catalog-item"><a href="#">Borodinski</a></li>
+					<li class="catalog-item"><a href="#">Mishka</a></li>
+					<li class="catalog-item"><a href="#">A+</a></li>
+					<li class="catalog-item"><a href="#">Kvast</a></li>
+				</ul>
+			</div>
+			<ul class="pagination-list">
+				<li class="pagination-item-current"><a href="">1</a></li>
+				<li class="pagination-item"><a href="">2</a></li>
+				<li class="pagination-item"><a href="">3</a></li>
+				<li class="pagination-item"><a href="">Следующая</a></li>
+			</ul>
+		</section>
+		<section class="map">
+			<!--Карта-->
+		</section>
+	</main>
+
+	<footer class="main-footer">
+
+		<ul class="footer-social">
+			<li><a class="social-button" href="#">Вконтакте</a></li>
+			<li><a class="social-button" href="#">Фейсбук</a></li>
+			<li><a class="social-button" href="#">Инстаграм</a></li>
+		</ul>
+
+
+		<p class="footer-description">
+			Давайте дружить, это выгодно!
+			<span>Скидка 10% для друзей из социальных сетей.</span>
+		</p>
+	</footer>
+</body>
+</html>
+
+<!--
+						<label>
+							Адаптивная 
+						</label>
+						<label>
+							Фиксированная <input type="radio" name="question-one" value="fx">
+						</label>
+						<label>
+							Резиновая <input type="radio" name="question-one" value="rb">
+						</label>
+
+
+						<h3 class="grid-lead"></h3>
+						<label>
+							Слайдер <input type="checkbox" name="slider" checked>
+						</label>
+						<label>
+							Блок преимуществ <input type="checkbox" name="advantages">
+						</label>
+						<label>
+							Новости <input type="checkbox" name="news" checked>
+						</label>
+						<label>
+							Галерея <input type="checkbox" name="galery">
+						</label>
+						<label>
+							Корзина <input type="checkbox" name="bin">
+						</label>
+
+						<input type="submit" value="Показать">
+						
+					-->
