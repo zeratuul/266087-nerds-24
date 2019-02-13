@@ -1,0 +1,189 @@
+
+@import url("normalize.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic");
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #283136;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: inherit;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+	font-family: inherit;
+	display: inline-block;
+	padding: 18px 39px;
+}
+
+.red-button {
+  background-color: #fb565a;
+}
+
+.green-button {
+  background-color: #00ca74;
+}
+
+.yellow-button {
+  background-color: #efc84a;
+}
+
+header {
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.main-services {
+  list-style: none;
+}
+
+.about-column .about-stats-list {
+  list-style: none;
+}
+
+.main-clients .clients-list {
+  list-style: none;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+
+.site-navigation,
+.user-navigation,
+.services-list,
+.about-stats-list,
+.clients-list,
+.footer-social {
+  list-style: none;
+}
+
+
+.catalog-lead {
+  text-align: center;
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.main-slider .main-tagline {
+  font-size: 55px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.main-slider .slide-two,
+.main-slider .slide-three {
+  display: none
+}
+
+
+
+.main-services h3 {
+  color: #000000;
+  
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-column .about-lead {
+  color: #000000;
+  
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+
+.about-column .about-lead-header {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-column .about-stats-text {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-column .about-stats-list-number {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.about-column .about-stats-list-name {
+  line-height: 18px;
+}
+
+
+
+.main-clients .clients-item {
+  opacity: 0.2;
+}
+
+.footer-social li {
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.footer-description {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-description .friend-social {
+  color: #444444;
+}
+
+.modal {
+  display: none;
+}
