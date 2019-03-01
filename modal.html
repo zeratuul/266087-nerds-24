@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Кнопка -->
+	<a href="#" class="btn call-modal">Написать нам</a>
+	
+	<!-- Обертка -->
+  <div class="overlay">
+		<!-- Модальное окно -->
+    <div class="modal">
+			<!-- Верхняя часть - Шапка -->
+      <div class="modal__header">
+        <h2 class="modal__head">Напишите нам</h2>
+        <button class="modal__exit">&times;</button>
+			</div>
+			<!-- Форма -->
+      <form action="#" class="modal-form">
+				<!-- Поле -->
+        <label class="modal-form__label">
+          Ваше имя:
+          <input type="text" placeholder="Имя Фамилия" class="modal-form__input">
+				</label>
+				<!-- Поле -->
+        <label class="modal-form__label">
+          Ваш e-mail:
+          <input type="email" placeholder="email@example.com" class="modal-form__input">
+				</label>
+				<!-- Поле -->
+        <label class="modal-form__label">
+          Текст письма:
+          <textarea placeholder="В свободной форме" class="modal-form__input modal-form__textarea"></textarea>
+				</label>
+				<!-- Кнопка -->
+        <button type="submit" class="btn modal-form__btn">ОТПРАВИТЬ</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/modal.js"></script>
+
+</body>
+
+</html>
