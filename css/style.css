@@ -325,14 +325,31 @@ img {
   background-color: #eeeeee;
 }
 
-.hero-list {
-  margin: auto;
+.slider {
+	position: relative;
 }
 
+.hero-list {
+	margin: auto;
+	position: relative;
+	min-height: 430px;
+}
 .hero-list li {
-  min-height: 430px;
-  padding-top: 86px;
-  padding-bottom: 80px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 86px;
+	padding-bottom: 80px;
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.5s ease;
+	overflow: hidden;
+} 
+
+.hero-list li.selected {
+	z-index: 1;
+	opacity: 1;
+
 }
 
 .hero-list li:nth-child(1) {
@@ -348,20 +365,47 @@ img {
 }
 
 .hero-list h2 {
-  color: #000000;
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  margin-bottom: 27px;
+	color: #000000;
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
+	margin-bottom: 27px;
 }
 
 .hero-list p {
-  line-height: 24px;
-  margin-bottom: 42px;
+	line-height: 24px;
+	margin-bottom: 42px;
 }
 
 .hero-list .btn {
-  max-width: 240px;
+	max-width: 240px;
+}
+
+.dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.dot {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #222222;
+	border: 0;
+	cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.dot.selected {
+  background-color:  rgb(228, 207, 19);
 }
 
 /* Стили для Услуг */
@@ -1019,6 +1063,7 @@ input:hover+.radio {
 .modal-form__btn {
   width: 260px;
   border: 0;
+  outline: none;
 }
 
 .overlay {

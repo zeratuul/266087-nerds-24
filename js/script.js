@@ -22,3 +22,53 @@ function init() { // определение функции
 	//вызываем метку с помощью коллекции geoObjects
 	map.geoObjects.add(placemark);
 };
+
+
+/*Модальное окно*/
+
+const overlay = document.querySelector('.overlay'),
+modalOpen = document.querySelector('.call-modal'),
+modalClose = document.querySelector('.modal__exit');
+
+
+
+modalOpen.addEventListener('click', function (event) {
+	event.preventDefault();
+	overlay.style.display = "flex";
+})
+
+modalClose.addEventListener('click', function (event) {
+	event.preventDefault();
+	overlay.style.display = "none";
+})
+
+window.addEventListener('click', function (event) {
+	if (event.target === overlay) {
+		overlay.style.display = "none";
+	}
+});
+
+window.addEventListener('keydown', function (event) {
+	if (event.keyCode === 27) {
+		overlay.style.display = "none";
+	}
+})
+
+/* Слайдер */
+
+function removeActive() {
+	document.querySelector('.hero-list li.selected').classList.remove('selected');
+	document.querySelector('.dot.selected').classList.remove('selected');
+}
+
+document.querySelectorAll('.dot').forEach((dot, indexDot) => {
+	dot.addEventListener('click', () => {
+		document.querySelectorAll('.hero-list li').forEach((li, indexLi) => {
+			if (indexDot == indexLi) {
+				removeActive();
+				li.classList.add('selected');
+				dot.classList.add('selected');
+			}
+		})
+	})
+})
