@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="index-body">
   <header class="header">
     <nav class="main-navigation centr" aria-label="Навигация на странице">
       <!-- Лого -->
-      <a class="logo" href="index.html"><svg width="160" height="65">
+      <a class="logo" href="index.html"><svg width="160" height="65" aria-label="Логотип сайта Нёрдс">
         <path d="M158 49l-4 1c-2 17-26 20-27 6 0-6 12-8 24-9 0-11-16 6-22-4-5-9 15-18 17-16 6 5 3 6-1 8-10 
         3-6 4-5 4 8-3 14-1 14 8h4c2 0 3 2 0 2zm-8 1c-9 1-17 3-16 5 2 6 14 7 16-5zm-32-5V33c1-7 12-3 9-2-3 
         2-5 9-6 12-1 2-3 2-3 2zM42 21c2 5-5 8-8 5-2-2-1-5 2-7 2-1 5-1 6 2zm15-2c3 5-5 9-9 5-1-2-1-5 3-7 
@@ -56,7 +56,7 @@
           <div>
             <h2 class="reset-h">Долго, дорого, <br> скрупулезно.</h2>
             <p class="reset-p">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+            <a href="#" class="btn" aria-label="Кнопка узнать больше">УЗНАТЬ БОЛЬШЕ</a>
           </div>
         </li>
         <li>
@@ -76,9 +76,9 @@
         </li>
       </ul>
       <div class="dots">
-				<button class="dot selected"></button>
-				<button class="dot"></button>
-				<button class="dot"></button>
+				<button class="dot selected" aria-label="Переключатель слайд один"></button>
+				<button class="dot" aria-label="Переключатель слайд два"></button>
+				<button class="dot" aria-label="Переключатель слайд три"></button>
       </div>
     </div>
     </section>
@@ -92,23 +92,23 @@
         <li class="services-item">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 				  <h3 class="reset-h">Веб-сайты</h3>
-				  <p class="reset-p">Мир никогда не будет прежним <br> после того как увидит ваш сайт!</p>
-				  <a href="#" class="btn btn-red">ЗАКАЗАТЬ</a>
+				  <p class="reset-p">Мир никогда не будет прежним <span class="space"></span> после того как увидит ваш сайт!</p>
+				  <a href="#" class="btn btn-red" aria-label="заказать веб сайты ">ЗАКАЗАТЬ</a>
         </li>
 
         <li class="services-item">
           <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 				  <h3 class="reset-h">Приложения</h3>
-				  <p class="reset-p">Покорите топ-10 приложений в br AppStore и Google Play</p>
-				  <a href="#" class="btn btn-green">ЗАКАЗАТЬ</a>
+				  <p class="reset-p">Покорите топ-10 приложений в AppStore и Google Play</p>
+				  <a href="#" class="btn btn-green" aria-label="заказать приложения">ЗАКАЗАТЬ</a>
         </li>
 
         <li class="services-item">
           <img src="img/illustration-3.jpg" width="300" height="146" alt="Приложения">
 				  <h3 class="reset-h">Презентации</h3>
-				  <p class="reset-p">Вы даже не подозреваете, <br>
+				  <p class="reset-p">Вы даже не подозреваете,<span></span>
 					насколько вы изумительны!</p>
-				  <a href="#" class="btn btn-yellow">ЗАКАЗАТЬ</a>
+				  <a href="#" class="btn btn-yellow" aria-label="заказать презентации ">ЗАКАЗАТЬ</a>
         </li>
       </ul>
     </section>
@@ -135,15 +135,15 @@
         <img src="img/nerds-illustration.png" width="360" height="208"  alt="Нердс">
         <h4 class="reset-h">с 2004 года Любим точность во всем:</h4>
         <ul class="about-stats reset-ul">
-          <li>
+          <li class="stats-inside">
             <span class="number">146<sup>%</sup></span>
             <span class="name">Уровень самоотдачи</span>
           </li>
-          <li>
+          <li class="stats-inside">
             <span class="number">100<sup>%</sup></span>
             <span class="name">Соблюдение сроков</span>
           </li>
-          <li>
+          <li class="stats-inside">
             <span class="number">50<sup>%</sup></span>
             <span class="name">Минимальная предоплата</span>
           </li>
@@ -154,10 +154,10 @@
 	  <section class="works centr">
 		  <h2 class="visually-hidden">Наши работы</h2>
 		  <ul class="works-list reset-ul">
-			  <li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy"></a></li>
-			  <li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"></a></li>
-			  <li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a></li>
-			  <li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a></li>
+        <li class="works-list-items"><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy" aria-label="Наши работы Html Academy"></a></li>
+        <li class="works-list-items"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski" aria-label="Наши работы Borodinski"></a></li>
+			  <li class="works-list-items"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink" aria-label="Наши работы Pink"></a></li>
+			  <li class="works-list-items"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka" aria-label="Наши работы Mishka"></a></li>
 		  </ul>
   </section>
   
@@ -171,10 +171,10 @@
 				<p class="reset-p">
 					191186, Санкт-Петербург,
 					ул. Б. Конюшенная, д. 19/8 
-					<span>тел. <a class="phone" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></span>
+					<span>тел. <a class="phone" href="tel:+7(812)275-75-75" aria-label="Наш номер телефона +7(812)275-75-75">+7 (812) 275-75-75</a></span>
 				</p>
 				<!-- Кнопка -->
-	<a href="#" class="btn call-modal">Написать нам</a>
+	<a href="#" class="btn call-modal" aria-label="Кнопка Напишите нам">Напишите нам</a>
 	
 	<!-- Обертка -->
   <div class="overlay">
@@ -220,15 +220,15 @@
   <!-- Подвал -->
 	<footer class="footer centr">
 		<ul class="social reset-ul">
-        <li><a class="social-icon" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте"></a></li>
-        <li><a class="social-icon" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"></a></li>
-        <li><a class="social-icon" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"></a></li>
+        <li><a class="social-icon" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте" aria-label="Мы Вконтакте"></a></li>
+        <li><a class="social-icon" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук" aria-label="Мы в Фейсбуке"></a></li>
+        <li><a class="social-icon" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм" aria-label="Мы в Инстаграм"></a></li>
 		</ul>
-		<p><b>Давайте дружить, это выгодно!</b>Скидка 10% для друзей из социальных сетей.</p>
+		<p><b>Давайте дружить, это выгодно!</b><span class="footer-span">Скидка 10% для друзей из социальных сетей.</span></p>
 	</footer>
   <!-- Скрипты -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>

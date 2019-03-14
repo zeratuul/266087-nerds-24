@@ -26,49 +26,77 @@ function init() { // определение функции
 
 /*Модальное окно*/
 
-const overlay = document.querySelector('.overlay'),
-modalOpen = document.querySelector('.call-modal'),
-modalClose = document.querySelector('.modal__exit');
-
-
-
-modalOpen.addEventListener('click', function (event) {
+var overlay = document.querySelector(".overlay"),
+	modalOpen = document.querySelector(".call-modal"),
+	modalClose = document.querySelector(".modal__exit");
+modalOpen.addEventListener("click", function (event) {
 	event.preventDefault();
 	overlay.style.display = "flex";
-})
-
-modalClose.addEventListener('click', function (event) {
+});
+modalClose.addEventListener("click", function (event) {
 	event.preventDefault();
 	overlay.style.display = "none";
-})
-
-window.addEventListener('click', function (event) {
+});
+window.addEventListener("click", function (event) {
 	if (event.target === overlay) {
 		overlay.style.display = "none";
 	}
 });
-
-window.addEventListener('keydown', function (event) {
+window.addEventListener("keydown", function (event) {
 	if (event.keyCode === 27) {
 		overlay.style.display = "none";
 	}
-})
+});
+var form = document.querySelector(".modal-form");
+var email = document.querySelector('input[type="email"]');
+form.addEventListener("submit", function (event) {
+	event.preventDefault();
 
-/* Слайдер */
+	if (email.value === "") {
+		email.classList.add("modal-form__input_error");
+	}
 
-function removeActive() {
-	document.querySelector('.hero-list li.selected').classList.remove('selected');
-	document.querySelector('.dot.selected').classList.remove('selected');
+	setTimeout(function () {
+		email.classList.remove("modal-form__input_error");
+	}, 3000);
+});
+
+
+if (document.body.classList.contains('index-body')) {
+	/* Слайдер */
+	var dots = document.querySelectorAll(".dot");
+	var slides = document.querySelectorAll(".hero-list li");
+
+	var _loop = function _loop(i) {
+		dots[i].addEventListener("click", function () {
+			document.querySelector(".dot.selected").classList.remove("selected");
+			dots[i].classList.add("selected");
+
+			for (var j = 0; j < slides.length; j++) {
+				document
+					.querySelector(".hero-list li.selected")
+					.classList.remove("selected");
+				slides[i].classList.add("selected");
+			}
+		});
+	};
+
+	for (var i = 0; i < dots.length; i++) {
+		_loop(i);
+	}
+
 }
 
-document.querySelectorAll('.dot').forEach((dot, indexDot) => {
-	dot.addEventListener('click', () => {
-		document.querySelectorAll('.hero-list li').forEach((li, indexLi) => {
-			if (indexDot == indexLi) {
-				removeActive();
-				li.classList.add('selected');
-				dot.classList.add('selected');
-			}
-		})
-	})
+function numberLimitation (inp, limit) {
+    var t = typeof inp === "string" ? document.querySelector (inp) : inp,
+    f = function (e) {
+        var v = t.value.split ("");
+        if (v.length > limit) {
+              t.value = v.slice(0, limit).join("");
+        }
+    };
+    t.addEventListener ("input", f);
+}
+window.addEventListener ("load", function () {
+  numberLimitation ("#inp", 5);
 })
