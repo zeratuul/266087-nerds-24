@@ -9,7 +9,7 @@
 
 <body class="index-body">
   <header class="header">
-    <nav class="main-navigation centr" aria-label="Навигация на странице">
+    <nav class="main-navigation container" aria-label="Навигация на странице">
       <!-- Лого -->
       <a class="logo" href="index.html"><svg width="160" height="65" aria-label="Логотип сайта Нёрдс">
         <path d="M158 49l-4 1c-2 17-26 20-27 6 0-6 12-8 24-9 0-11-16 6-22-4-5-9 15-18 17-16 6 5 3 6-1 8-10 
@@ -50,29 +50,24 @@
 
 
   <section class="hero">
-    <div class="slider centr">
+    <div class="slider container">
       <ul class="hero-list reset-ul">
         <li class="selected">
-          <div>
             <h2 class="reset-h">Долго, дорого, <br> скрупулезно.</h2>
             <p class="reset-p">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
             <a href="#" class="btn" aria-label="Кнопка узнать больше">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
         </li>
         <li>
-          <div>
             <h2 class="reset-h">Любим математику <br> как никто другой</h2>
             <p class="reset-p">Никакого креатива, только математические формулы <br>
               для расчета идеальных пропорций.</p>
             <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
-            </div>
         </li>
         <li>
-          <div>
+
             <h2 class="reset-h">Только ночь,<br> только хардкор</h2>
             <p class="reset-p">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
             <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
-          </div>
         </li>
       </ul>
       <div class="dots">
@@ -85,7 +80,7 @@
 
   </header>
   <main>
-    <section class="main-services centr">
+    <section class="main-services container">
       <h2 class="visually-hidden">Услуги компании</h2>
       <ul class="services-list reset-ul">
 
@@ -114,7 +109,7 @@
     </section>
 
     <!-- О нас -->
-	<section class="about centr">
+	<section class="about container">
       <div class="item">
         <h2 class="reset-h">
           Мы — маленькая, но гордая
@@ -151,13 +146,13 @@
       </div>
     </section>
     <!-- Проекты -->
-	  <section class="works centr">
+	  <section class="works container">
 		  <h2 class="visually-hidden">Наши работы</h2>
 		  <ul class="works-list reset-ul">
-        <li class="works-list-items"><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy" aria-label="Наши работы Html Academy"></a></li>
-        <li class="works-list-items"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski" aria-label="Наши работы Borodinski"></a></li>
-			  <li class="works-list-items"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink" aria-label="Наши работы Pink"></a></li>
-			  <li class="works-list-items"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka" aria-label="Наши работы Mishka"></a></li>
+        <li class="works-list-items"><a class="work-list-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy" aria-label="Наши работы Html Academy"></a></li>
+        <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski" aria-label="Наши работы Borodinski"></a></li>
+			  <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink" aria-label="Наши работы Pink"></a></li>
+			  <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka" aria-label="Наши работы Mishka"></a></li>
 		  </ul>
   </section>
   
@@ -165,7 +160,7 @@
 	<section class="contact">
       <h2 class="visually-hidden">Контакты</h2>
 		<!-- Обертка -->
-		<div class="centr contact-container">
+		<div class="container contact-container">
 			<article class="contact-block">
 				<h3 class="reset-h">NЁRDS DESIGN STUDIO</h3>
 				<p class="reset-p">
@@ -174,7 +169,7 @@
 					<span>тел. <a class="phone" href="tel:+7(812)275-75-75" aria-label="Наш номер телефона +7(812)275-75-75">+7 (812) 275-75-75</a></span>
 				</p>
 				<!-- Кнопка -->
-	<a href="#" class="btn call-modal" aria-label="Кнопка Напишите нам">Напишите нам</a>
+	<a href="form.html" class="btn call-modal" aria-label="Кнопка Напишите нам">Напишите нам</a>
 	
 	<!-- Обертка -->
   <div class="overlay">
@@ -211,14 +206,14 @@
 		</div>
 		<!-- Карта -->
 		<div class="map" id="map">
-
-		</div>
+      <img src="img/map.png" alt="" class="map-image">
+  </div>
 	</section>
 	
   </main>
 
   <!-- Подвал -->
-	<footer class="footer centr">
+	<footer class="footer container">
 		<ul class="social reset-ul">
         <li><a class="social-icon" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте" aria-label="Мы Вконтакте"></a></li>
         <li><a class="social-icon" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук" aria-label="Мы в Фейсбуке"></a></li>
@@ -228,7 +223,7 @@
 	</footer>
   <!-- Скрипты -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
-  <script src="js/script-min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
