@@ -2,228 +2,282 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8" />
+	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="index-body">
-  <header class="header">
-    <nav class="main-navigation container" aria-label="Навигация на странице">
-      <!-- Лого -->
-      <a class="logo" href="index.html"><svg width="160" height="65" aria-label="Логотип сайта Нёрдс">
-        <path d="M158 49l-4 1c-2 17-26 20-27 6 0-6 12-8 24-9 0-11-16 6-22-4-5-9 15-18 17-16 6 5 3 6-1 8-10 
-        3-6 4-5 4 8-3 14-1 14 8h4c2 0 3 2 0 2zm-8 1c-9 1-17 3-16 5 2 6 14 7 16-5zm-32-5V33c1-7 12-3 9-2-3 
-        2-5 9-6 12-1 2-3 2-3 2zM42 21c2 5-5 8-8 5-2-2-1-5 2-7 2-1 5-1 6 2zm15-2c3 5-5 9-9 5-1-2-1-5 3-7 
-        2-1 4-2 6 2zM29 62c-8 5-14 4-12-11 1-11-1-12-3-10-3 3-5 10-5 17a51 51 0 0 0 1 5c0 1-5 
-        3-8 1-1-1-2-9-2-20 0-9 1-15 2-15 8-2 10 1 8 8a48 48 0 0 0-2 8c2-5 4-9 7-10 8-5 14-3 13 6-2 17-3 19-1
-         18 2-2 4 1 2 3zm26-2c-2 3-8 5-13 4-8-1-13-8-11-18 2-11 18-18 23-10 4 5-2 16-11 19l-1 1c2 5 7 7 11 2 
-         2-2 4-1 2 2zm-14-8c6-4 8-13 7-16-2-2-6 2-7 12v4zm42-7l-6 5c-2 1-5 0-5-3 0-1 1-3 4-4-1-2-2-3-3-2-3
-          3-7 12-6 19v1l1 2c0 1-5 3-8 0-1 0-2-6-2-17 0-9 2-17 3-17 6-2 10 1 8 7l-3 11c3-7 7-13 10-15 6-3 10
-           1 9 8l-1 2-1 3z" />
-        <path d="M113 26a87 87 0 0 0-1 8c-1 10-1 19 1 23 0 2 3 5 6 2 3-4 6-2 2 2-2 2-7 4-11 4-3-1-5-3-6-6l-2
-         2c-2 3-4 4-8 3-6 0-10-7-8-18s11-14 16-12l1-4v-1a97 97 0 0 1-5 1c-24 4-16-15-10-20 7-6 7-2 5-1-3 3-5 
-         16 5 16h5c4-19 14-27 22-24 9 3 8 17-12 25zm-11 25V39v-2c-3-1-6 4-7 11-1 9 2 13 5 11l2-8zm24-44c-1-2-8 
-         1-12 15 10-5 14-13 12-15z" /></svg></a>
-    <!-- Меню Сайта-->
-      <ul class="site-navigation reset-ul">
-        <li><a href="#" aria-label="Перейти в раздел: Студия">Студия</a></li>
-        <li><a href="#" aria-label="Перейти в раздел: Клиенты">Клиенты</a></li>
-        <li><a href="../catalog.html" aria-label="Перейти в раздел: Магазин">Магазин</a></li>
-        <li><a href="#" aria-label="Перейти в раздел: Контакты">Контакты</a></li>
-      </ul>
-      <!-- Меню Пользователя-->
-      <ul class="user-navigation reset-ul">
-        <li class="basket">
-          <a href="#" aria-label="Корзина">
-            <svg class="svg" width="15" height="15">
-              <circle fill="#a6a6a6" cx="5" cy="14" r="2" />
-              <circle fill="#a6a6a6" cx="13" cy="14" r="2" />
-              <path fill="#a6a6a6" d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2z" /></svg> 
-              Корзина          
-		  </a>
-        </li>
-      </ul>
-    </nav>
+	<header class="header">
+		<nav class="main-navigation container" aria-label="Навигация на странице">
+			<!-- Лого -->
+			<a class="logo" href="index.html"><svg width="160" height="65" aria-label="Логотип сайта Нёрдс">
+					<path d="M158 49l-4 1c-2 17-26 20-27 6 0-6 12-8 24-9 0-11-16 6-22-4-5-9 15-18 17-16 6 5 3 6-1 8-10 
+3-6 4-5 4 8-3 14-1 14 8h4c2 0 3 2 0 2zm-8 1c-9 1-17 3-16 5 2 6 14 7 16-5zm-32-5V33c1-7 12-3 9-2-3 
+2-5 9-6 12-1 2-3 2-3 2zM42 21c2 5-5 8-8 5-2-2-1-5 2-7 2-1 5-1 6 2zm15-2c3 5-5 9-9 5-1-2-1-5 3-7 
+2-1 4-2 6 2zM29 62c-8 5-14 4-12-11 1-11-1-12-3-10-3 3-5 10-5 17a51 51 0 0 0 1 5c0 1-5 
+3-8 1-1-1-2-9-2-20 0-9 1-15 2-15 8-2 10 1 8 8a48 48 0 0 0-2 8c2-5 4-9 7-10 8-5 14-3 13 6-2 17-3 19-1
+18 2-2 4 1 2 3zm26-2c-2 3-8 5-13 4-8-1-13-8-11-18 2-11 18-18 23-10 4 5-2 16-11 19l-1 1c2 5 7 7 11 2 
+2-2 4-1 2 2zm-14-8c6-4 8-13 7-16-2-2-6 2-7 12v4zm42-7l-6 5c-2 1-5 0-5-3 0-1 1-3 4-4-1-2-2-3-3-2-3
+3-7 12-6 19v1l1 2c0 1-5 3-8 0-1 0-2-6-2-17 0-9 2-17 3-17 6-2 10 1 8 7l-3 11c3-7 7-13 10-15 6-3 10
+1 9 8l-1 2-1 3z" />
+					<path d="M113 26a87 87 0 0 0-1 8c-1 10-1 19 1 23 0 2 3 5 6 2 3-4 6-2 2 2-2 2-7 4-11 4-3-1-5-3-6-6l-2
+2c-2 3-4 4-8 3-6 0-10-7-8-18s11-14 16-12l1-4v-1a97 97 0 0 1-5 1c-24 4-16-15-10-20 7-6 7-2 5-1-3 3-5 
+16 5 16h5c4-19 14-27 22-24 9 3 8 17-12 25zm-11 25V39v-2c-3-1-6 4-7 11-1 9 2 13 5 11l2-8zm24-44c-1-2-8 
+1-12 15 10-5 14-13 12-15z" />
+				</svg>
+			</a>
+			<!-- Меню Сайта-->
+			<ul class="site-navigation reset-ul">
+				<li>
+					<a href="index.html" aria-label="Перейти в раздел: Студия">Студия</a>
+				</li>
+				<li>
+					<a href="index.html" aria-label="Перейти в раздел: Клиенты">Клиенты</a>
+				</li>
+				<li>
+					<a href="catalog.html" aria-label="Перейти в раздел: Магазин">Магазин</a>
+				</li>
+				<li>
+					<a href="index.html" aria-label="Перейти в раздел: Контакты">Контакты</a>
+				</li>
+			</ul>
+			<!-- Меню Пользователя-->
+			<ul class="user-navigation reset-ul">
+				<li class="basket">
+					<a href="#" aria-label="Корзина">
+						<svg class="svg" width="15" height="15">
+							<circle fill="#a6a6a6" cx="5" cy="14" r="2" />
+							<circle fill="#a6a6a6" cx="13" cy="14" r="2" />
+							<path fill="#a6a6a6" d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2z" />
+						</svg>
+						Корзина
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-    <h1 class="visually-hidden">Дизайн студия «Нёрдс»</h1>
+		<h1 class="visually-hidden">Дизайн студия «Нёрдс»</h1>
 
-
-  <section class="hero">
-    <div class="slider container">
-      <ul class="hero-list reset-ul">
-        <li class="selected">
-            <h2 class="reset-h">Долго, дорого, <br> скрупулезно.</h2>
-            <p class="reset-p">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="btn" aria-label="Кнопка узнать больше">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-        <li>
-            <h2 class="reset-h">Любим математику <br> как никто другой</h2>
-            <p class="reset-p">Никакого креатива, только математические формулы <br>
-              для расчета идеальных пропорций.</p>
-            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-        <li>
-
-            <h2 class="reset-h">Только ночь,<br> только хардкор</h2>
-            <p class="reset-p">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
-        </li>
-      </ul>
-      <div class="dots">
-				<button class="dot selected" aria-label="Переключатель слайд один"></button>
-				<button class="dot" aria-label="Переключатель слайд два"></button>
-				<button class="dot" aria-label="Переключатель слайд три"></button>
-      </div>
-    </div>
-    </section>
-
-  </header>
-  <main>
-    <section class="main-services container">
-      <h2 class="visually-hidden">Услуги компании</h2>
-      <ul class="services-list reset-ul">
-
-        <li class="services-item">
-          <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-				  <h3 class="reset-h">Веб-сайты</h3>
-				  <p class="reset-p">Мир никогда не будет прежним <span class="space"></span> после того как увидит ваш сайт!</p>
-				  <a href="#" class="btn btn-red" aria-label="заказать веб сайты ">ЗАКАЗАТЬ</a>
-        </li>
-
-        <li class="services-item">
-          <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-				  <h3 class="reset-h">Приложения</h3>
-				  <p class="reset-p">Покорите топ-10 приложений в AppStore и Google Play</p>
-				  <a href="#" class="btn btn-green" aria-label="заказать приложения">ЗАКАЗАТЬ</a>
-        </li>
-
-        <li class="services-item">
-          <img src="img/illustration-3.jpg" width="300" height="146" alt="Приложения">
-				  <h3 class="reset-h">Презентации</h3>
-				  <p class="reset-p">Вы даже не подозреваете,<span></span>
-					насколько вы изумительны!</p>
-				  <a href="#" class="btn btn-yellow" aria-label="заказать презентации ">ЗАКАЗАТЬ</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- О нас -->
-	<section class="about container">
-      <div class="item">
-        <h2 class="reset-h">
-          Мы — маленькая, но гордая
-          дизайн-студия из Краснодара.
-        </h2>
-        <p class="reset-p">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <h4 class="reset-h">Выполняем заказы на разработку:</h4>
-        <ul class="about-list reset-ul">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
-      <div class="item">
-        <img src="img/nerds-illustration.png" width="360" height="208"  alt="Нердс">
-        <h4 class="reset-h">с 2004 года Любим точность во всем:</h4>
-        <ul class="about-stats reset-ul">
-          <li class="stats-inside">
-            <span class="number">146<sup>%</sup></span>
-            <span class="name">Уровень самоотдачи</span>
-          </li>
-          <li class="stats-inside">
-            <span class="number">100<sup>%</sup></span>
-            <span class="name">Соблюдение сроков</span>
-          </li>
-          <li class="stats-inside">
-            <span class="number">50<sup>%</sup></span>
-            <span class="name">Минимальная предоплата</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Проекты -->
-	  <section class="works container">
-		  <h2 class="visually-hidden">Наши работы</h2>
-		  <ul class="works-list reset-ul">
-        <li class="works-list-items"><a class="work-list-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy" aria-label="Наши работы Html Academy"></a></li>
-        <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski" aria-label="Наши работы Borodinski"></a></li>
-			  <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink" aria-label="Наши работы Pink"></a></li>
-			  <li class="works-list-items"><a class="work-list-link" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka" aria-label="Наши работы Mishka"></a></li>
-		  </ul>
-  </section>
-  
-  <!-- Контакты -->
-	<section class="contact">
-      <h2 class="visually-hidden">Контакты</h2>
-		<!-- Обертка -->
-		<div class="container contact-container">
-			<article class="contact-block">
-				<h3 class="reset-h">NЁRDS DESIGN STUDIO</h3>
-				<p class="reset-p">
-					191186, Санкт-Петербург,
-					ул. Б. Конюшенная, д. 19/8 
-					<span>тел. <a class="phone" href="tel:+7(812)275-75-75" aria-label="Наш номер телефона +7(812)275-75-75">+7 (812) 275-75-75</a></span>
-				</p>
-				<!-- Кнопка -->
-	<a href="form.html" class="btn call-modal" aria-label="Кнопка Напишите нам">Напишите нам</a>
-	
-	<!-- Обертка -->
-  <div class="overlay">
-		<!-- Модальное окно -->
-    <div class="modal">
-			<!-- Верхняя часть - Шапка -->
-      <div class="modal__header">
-        <h2 class="modal__head">Напишите нам</h2>
-        <button class="modal__exit">&times;</button>
+		<section class="hero">
+			<div class="slider container">
+				<ul class="hero-list reset-ul">
+					<li class="selected">
+						<h2 class="reset-h">
+							Долго, дорого, <br />
+							скрупулезно.
+						</h2>
+						<p class="reset-p">
+							Математически выверенный дизайн <br />
+							для вашего сайта или мобильного приложения.
+						</p>
+						<a href="#" class="btn" aria-label="Кнопка узнать больше">УЗНАТЬ БОЛЬШЕ</a>
+					</li>
+					<li>
+						<h2 class="reset-h">
+							Любим математику <br />
+							как никто другой
+						</h2>
+						<p class="reset-p">
+							Никакого креатива, только математические формулы <br />
+							для расчета идеальных пропорций.
+						</p>
+						<a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+					</li>
+					<li>
+						<h2 class="reset-h">
+							Только ночь,<br />
+							только хардкор
+						</h2>
+						<p class="reset-p">
+							Работать днем, как все? Мы против этого. <br />
+							Ближе к полуночи работа только начинается.
+						</p>
+						<a href="#" class="btn">УЗНАТЬ БОЛЬШЕ</a>
+					</li>
+				</ul>
+				<div class="dots">
+					<button class="dot selected" aria-label="Переключатель слайд один"></button>
+					<button class="dot" aria-label="Переключатель слайд два"></button>
+					<button class="dot" aria-label="Переключатель слайд три"></button>
+				</div>
 			</div>
-			<!-- Форма -->
-      <form action="#" class="modal-form">
-				<!-- Поле -->
-        <label class="modal-form__label">
-          Ваше имя:
-          <input type="text" placeholder="Имя Фамилия" class="modal-form__input">
-				</label>
-				<!-- Поле -->
-        <label class="modal-form__label">
-          Ваш e-mail:
-          <input type="email" placeholder="email@example.com" class="modal-form__input">
-				</label>
-				<!-- Поле -->
-        <label class="modal-form__label">
-          Текст письма:
-          <textarea placeholder="В свободной форме" class="modal-form__input modal-form__textarea"></textarea>
-				</label>
-				<!-- Кнопка -->
-        <button type="submit" class="btn modal-form__btn">ОТПРАВИТЬ</button>
-			</form>
-		</div>
-	</div>
-			</article>
-		</div>
-		<!-- Карта -->
-		<div class="map" id="map">
-      <img src="img/map.png" alt="" class="map-image">
-  </div>
-	</section>
-	
-  </main>
+		</section>
+	</header>
+	<main>
+		<section class="main-services container">
+			<h2 class="visually-hidden">Услуги компании</h2>
+			<ul class="services-list reset-ul">
+				<li class="services-item">
+					<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты" />
+					<h3 class="reset-h">Веб-сайты</h3>
+					<p class="reset-p">
+						Мир никогда не будет прежним <span class="space"></span> после
+						того как увидит ваш сайт!
+					</p>
+					<a href="#" class="btn btn-red" aria-label="заказать веб сайты ">ЗАКАЗАТЬ</a>
+				</li>
 
-  <!-- Подвал -->
+				<li class="services-item">
+					<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения" />
+					<h3 class="reset-h">Приложения</h3>
+					<p class="reset-p">
+						Покорите топ-10 приложений в AppStore и Google Play
+					</p>
+					<a href="#" class="btn btn-green" aria-label="заказать приложения">ЗАКАЗАТЬ</a>
+				</li>
+
+				<li class="services-item">
+					<img src="img/illustration-3.jpg" width="300" height="146" alt="Приложения" />
+					<h3 class="reset-h">Презентации</h3>
+					<p class="reset-p">
+						Вы даже не подозреваете,<span></span> насколько вы изумительны!
+					</p>
+					<a href="#" class="btn btn-yellow" aria-label="заказать презентации ">ЗАКАЗАТЬ</a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- О нас -->
+		<section class="about container">
+			<div class="item">
+				<h2 class="reset-h">
+					Мы — маленькая, но гордая дизайн-студия из Краснодара.
+				</h2>
+				<p class="reset-p">
+					Исповедуем принципы минимализма и чистоты. Ставим математический
+					расчет превыше креатива. Работаем не покладая рук, как роботы.
+				</p>
+				<h4 class="reset-h">Выполняем заказы на разработку:</h4>
+				<ul class="about-list reset-ul">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="item">
+				<img src="img/nerds-illustration.png" width="360" height="208" alt="Нердс" />
+				<h4 class="reset-h">с 2004 года Любим точность во всем:</h4>
+				<ul class="about-stats reset-ul">
+					<li class="stats-inside">
+						<span class="number">146<sup>%</sup></span>
+						<span class="name">Уровень самоотдачи</span>
+					</li>
+					<li class="stats-inside">
+						<span class="number">100<sup>%</sup></span>
+						<span class="name">Соблюдение сроков</span>
+					</li>
+					<li class="stats-inside">
+						<span class="number">50<sup>%</sup></span>
+						<span class="name">Минимальная предоплата</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Проекты -->
+		<section class="works container">
+			<h2 class="visually-hidden">Наши работы</h2>
+			<ul class="works-list reset-ul">
+				<li class="works-list-items">
+					<a class="work-list-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png"
+							width="199" height="68" alt="Html Academy" aria-label="Наши работы Html Academy" /></a>
+				</li>
+				<li class="works-list-items">
+					<a class="work-list-link" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"
+							aria-label="Наши работы Borodinski" /></a>
+				</li>
+				<li class="works-list-items">
+					<a class="work-list-link" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"
+							aria-label="Наши работы Pink" /></a>
+				</li>
+				<li class="works-list-items">
+					<a class="work-list-link" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"
+							aria-label="Наши работы Mishka" /></a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Контакты -->
+		<section class="contact">
+			<h2 class="visually-hidden">Контакты</h2>
+			<!-- Обертка -->
+			<div class="container contact-container">
+				<article class="contact-block">
+					<h3 class="reset-h">NЁRDS DESIGN STUDIO</h3>
+					<p class="reset-p">
+						191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						<span>тел.
+							<a class="phone" href="tel:+7(812)275-75-75" aria-label="Наш номер телефона +7(812)275-75-75">+7 (812)
+								275-75-75</a></span>
+					</p>
+					<!-- Кнопка -->
+					<a href="form.html" class="btn call-modal" aria-label="Кнопка Напишите нам">Напишите нам</a>
+
+					<!-- Обертка -->
+					<div class="overlay">
+						<!-- Модальное окно -->
+						<div class="modal">
+							<!-- Верхняя часть - Шапка -->
+							<div class="modal__header">
+								<h2 class="modal__head">Напишите нам</h2>
+								<button class="modal__exit">&times;</button>
+							</div>
+							<!-- Форма -->
+							<form action="#" class="modal-form">
+								<!-- Поле -->
+								<label class="modal-form__label">
+									Ваше имя:
+									<input type="text" placeholder="Имя Фамилия" class="modal-form__input" />
+								</label>
+								<!-- Поле -->
+								<label class="modal-form__label">
+									Ваш e-mail:
+									<input type="email" placeholder="email@example.com" class="modal-form__input" />
+								</label>
+								<!-- Поле -->
+								<label class="modal-form__label">
+									Текст письма:
+									<textarea placeholder="В свободной форме" class="modal-form__input modal-form__textarea"></textarea>
+								</label>
+								<!-- Кнопка -->
+								<button type="submit" class="btn modal-form__btn">
+									ОТПРАВИТЬ
+								</button>
+							</form>
+						</div>
+					</div>
+				</article>
+			</div>
+			<!-- Карта -->
+			<div class="map" id="map">
+				<img src="img/map.png" alt="Наш адрес" class="map-image" width="1440" height="417" />
+			</div>
+		</section>
+	</main>
+
+	<!-- Подвал -->
 	<footer class="footer container">
 		<ul class="social reset-ul">
-        <li><a class="social-icon" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте" aria-label="Мы Вконтакте"></a></li>
-        <li><a class="social-icon" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук" aria-label="Мы в Фейсбуке"></a></li>
-        <li><a class="social-icon" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм" aria-label="Мы в Инстаграм"></a></li>
+			<li>
+				<a class="social-icon" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Вконтакте"
+						aria-label="Мы Вконтакте" /></a>
+			</li>
+			<li>
+				<a class="social-icon" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Фейсбук"
+						aria-label="Мы в Фейсбуке" /></a>
+			</li>
+			<li>
+				<a class="social-icon" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Инстаграм"
+						aria-label="Мы в Инстаграм" /></a>
+			</li>
 		</ul>
-		<p><b>Давайте дружить, это выгодно!</b><span class="footer-span">Скидка 10% для друзей из социальных сетей.</span></p>
+		<p>
+			<b>Давайте дружить, это выгодно!</b><span class="footer-span">Скидка 10% для друзей из социальных сетей.</span>
+		</p>
 	</footer>
-  <!-- Скрипты -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
-  <script src="js/script.js"></script>
+	<!-- Скрипты -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
